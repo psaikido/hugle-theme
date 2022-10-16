@@ -8,7 +8,7 @@ homepage = "https://github.com/psaikido/hugle-theme"
 demosite = "https://gohugo.io"
 
 tags = ["blog", "portfolio", "dark", "writing", "author"]
-features = ["some", "awesome", "features"]
+features = ["responsive", "search with pagefind"]
 
 [author]
     name = "Hugh Carroll"
