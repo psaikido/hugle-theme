@@ -5,7 +5,7 @@ description = "Dark portfolio and blog"
 
 homepage = "https://github.com/psaikido/hugle-theme"
 
-demosite = "https://gohugo.io"
+demosite = "https://psaikido.github.io/hugle-theme-demo/"
 
 tags = ["blog", "portfolio", "dark", "writing", "author"]
 features = ["responsive", "search with pagefind"]
