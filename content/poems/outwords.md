@@ -1,6 +1,7 @@
 ---
 bannerTitle: 'hugle theme'
-title: 'outwords'
+title: outwords
+type: poems
 ---
 
 stepping forward  

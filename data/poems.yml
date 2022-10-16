@@ -1,5 +1,8 @@
 menu:
 
+- title: intro 
+  url: /poems/intro/
+
 - title: inwords 
   url: /poems/inwords/
 
