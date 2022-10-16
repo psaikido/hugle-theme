@@ -1,6 +1,6 @@
 # hugle-theme
 
-![hugle-theme picture](https://github.com/psaikido/hugle-theme/images/tn.png)
+![hugle-theme picture](https://github.com/psaikido/hugle-theme/blob/master/images/tn.png)
 
 - Responsive
 - Dark by default
