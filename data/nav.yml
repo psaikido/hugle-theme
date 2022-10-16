@@ -17,8 +17,8 @@ nests:
       sub: 
       - title: poetry
         subsub: 
-        - title: Book 1
-          url: 
+        - title: Collection 
+          url: /poems/
           dataFile: 
 
         - title: Book 2
