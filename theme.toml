@@ -1,0 +1,16 @@
+name = "hugle"
+license = "MIT"
+licenselink = "https://github.com/psaikido/hugle-theme/LICENSE"
+description = "Dark portfolio and blog"
+
+homepage = "https://github.com/psaikido/hugle-theme"
+
+demosite = "https://gohugo.io"
+
+tags = ["blog", "portfolio", "dark", "writing", "author"]
+features = ["some", "awesome", "features"]
+
+[author]
+    name = "Hugh Carroll"
+    homepage = "https://hugle.uk"
+

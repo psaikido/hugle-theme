@@ -1,0 +1,93 @@
+<nav class="main-nav">
+    <button class="toggler"> 
+        <div class="button-text">menu</div>
+    </button>
+
+    <div class="sidebar-menu little">
+        <button class="heading top">&#x0f3a; menu &#x0f3b;</button>
+        <ul class="little">
+            {{ range .Site.Data.nav.solos }}
+                <li class="level1-child">
+                    <a href="{{ .url }}" alt="{{ .title }}">
+                        {{ .title }}
+                    </a>
+                </li>
+            {{ end }}
+            
+            {{ range .Site.Data.nav.nests }}
+                <li class="level1-parent">
+                    <button class="heading">
+                        {{ .title }}
+                    </button>
+
+                    <ul class="level1-parent-dropdown">
+                        {{ range .sub }}
+                            <li class="level2-parent">
+                                <div class="sub-heading">{{ .title }}</div>
+
+                                <ul class="submenu">
+                                    {{ range .subsub }}
+                                        <li class="subsubitem">
+                                            <a href="{{ .url }}" alt="{{ .title }}" >
+                                                {{ .title }}
+                                            </a>
+                                        </li>
+                                        {{ end }}
+                                </ul>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="sidebar-menu big">
+        <button class="heading top">༺ menu ༻</button>
+
+        <div class="ul-blocks">
+            <ul class="solos">
+
+                {{ range .Site.Data.nav.solos }}
+                    <li>
+                        <a href="{{ .url }}" alt="{{ .title }}">
+                            {{ .title }}
+                        </a>
+                    </li>
+                {{ end }}
+
+            </ul>
+
+            <ul class="nests">
+
+                {{ range .Site.Data.nav.nests }}
+                    <li class="level1-parent">
+                        <div class="icon">
+                            <img src="/images/site/{{ .icon }}" alt="icon">
+                        </div>
+
+                        <button class="heading">{{ .title }} </button>
+
+                        <ul class="level1-parent-dropdown-big">
+                            {{ range .sub }}
+                                <li class="level2-parent">
+                                    <div class="sub-heading">{{ .title }}</div>
+
+                                    <ul class="submenu">
+                                        {{ range .subsub }}
+                                            <li class="subsubitem">
+                                                <a href="{{ .url }}" alt="{{ .title }}">
+                                                    {{ .title }}
+                                                </a>
+                                            </li>
+                                        {{ end }}
+                                    </ul>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

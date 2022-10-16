@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+    <h2>{{ .Params.title }}</h2>
+
+    {{ if ne .Content "" }}
+        <p> {{ .Content }} </p>
+    {{ end }}
+
+    {{ $imageDir := .Params.imageDir }}
+
+    {{ range .Params.images }}
+        <figure>
+            {{ if .name }}
+                <h5>{{ .name }}</h5>
+            {{ end }}
+
+            <img src = "{{ $imageDir }}{{ .img }}"
+                 alt = "{{ .name }}"
+                 class = "center-img" />
+
+            <figurecaption>
+                {{ if .text }}
+                    {{ .text }}
+                    <br />
+                {{ end }}
+
+                {{ if .url }}
+                    <a href="{{ .url }}">{{ .urlText }}</a>
+                {{ end }}
+            </figurecaption>
+
+        </figure>
+    {{ end }}
+{{ end }}
+
+{{ define "subnavbar" }}
+    {{ if .Params.subnav }}
+        {{ $menu := (index $.Site.Data (print .Params.subnav)).menu }}
+        {{ .Scratch.Set "menu" $menu }}
+        {{ partial "subnavbar.html" . }}
+    {{ end }}
+{{ end }}
+

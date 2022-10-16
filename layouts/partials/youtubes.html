@@ -1,0 +1,25 @@
+{{ $youtubes := .Scratch.Get "youtubes" }}
+
+{{ range $youtubes.menu }}
+    <h4>{{ .title }}</h4>
+
+    {{if .date }}
+        {{ .date }}
+    {{ end }}
+
+    <div class="two-cols">
+        <div class="col-left">
+            {{ partial "youtube.html" .url }}
+        </div>
+
+        <div class="col-right">
+            <ul>
+                {{ range .desc }}
+                    <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+
+    <hr />
+{{ end }}

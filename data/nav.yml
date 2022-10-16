@@ -1,0 +1,60 @@
+solos:
+    - title: home
+      url: /
+
+    - title: shop
+      url: /shop/
+
+    - title: about
+      url: /about/
+
+    - title: contact
+      url: /contact/
+
+nests:
+    - title: writing
+      icon: writing.png
+      sub: 
+      - title: poetry
+        subsub: 
+        - title: Book 1
+          url: 
+          dataFile: 
+
+        - title: Book 2
+          url: 
+          dataFile: 
+
+        - title: Book 3
+          url: 
+          dataFile: 
+
+        - title: Book 4
+          url: 
+          dataFile: 
+
+      - title: prose
+        subsub:
+        - title: Book 5
+          url: 
+          dataFile: 
+
+
+    - title: Category 2
+      icon: buddha.png
+      sub:
+      - title: your stuff
+
+    - title: Category 3
+      icon: kite-runner.png
+      sub:
+      - title: your stuff
+
+    - title: Category 4
+      icon: galleries.png
+      sub:
+      - title: galleries
+        subsub:
+          - title: your stuff
+            url: 
+

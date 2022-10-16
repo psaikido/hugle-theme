@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+    {{ partial "head.html" . }}
+
+    <body>
+
+        <div class="grid-wrap">
+            {{ partial "main-nav.html" . }}
+
+            <heading>
+                {{ if .Params.bannerTitle }}
+                    <a href="/"><h1>&#x0f3a; {{ .Params.bannerTitle }} &#x0f3b;</h1></a>
+                {{ else }}
+                    <a href="/"><h1>&#x0f3a; hugle theme &#x0f3b;</h1></a>
+                {{ end }}
+            </heading>
+
+            {{ partial "pagefind.html" . }}
+
+            <main class="main" data-pagefind-body>
+                <div id="results"></div>
+                {{ block "main" . }}
+                {{ end }}
+            </main>
+
+            {{ block "subnavbar" . }}
+            {{ end }}
+
+            {{ block "subnav2" . }}
+            {{ end }}
+
+            <a href="#" class="scroll-to-top">scroll to top</a>
+
+            {{ partial "footer.html" }}
+
+            <script type="text/javascript" src="/js/toggler.js"> </script>
+            <script type="text/javascript" src="/js/cookie-toggler.js"> </script>
+        </div>
+    </body>
+</html>
