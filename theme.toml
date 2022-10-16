@@ -1,4 +1,4 @@
-name = "hugle"
+name = "hugle-theme"
 license = "MIT"
 licenselink = "https://github.com/psaikido/hugle-theme/LICENSE"
 description = "Dark portfolio and blog"
@@ -11,6 +11,6 @@ tags = ["blog", "portfolio", "dark", "writing", "author"]
 features = ["responsive", "search with pagefind"]
 
 [author]
-    name = "Hugh Carroll"
+    name = "psaikido"
     homepage = "https://hugle.uk"
 
