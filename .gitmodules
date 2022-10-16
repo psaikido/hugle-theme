@@ -1,0 +1,3 @@
+[submodule "hugle-theme"]
+	path = hugle-theme
+	url = git@github.com:psaikido/hugle-theme.git
