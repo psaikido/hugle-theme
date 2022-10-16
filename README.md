@@ -2,6 +2,8 @@
 
 ![hugle-theme picture](https://github.com/psaikido/hugle-theme/blob/master/images/tn.png)
 
+[demo site](https://psaikido.github.io/hugle-theme-demo/)
+
 - Responsive
 - Dark by default
 - Light too
